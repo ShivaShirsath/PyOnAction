@@ -19,10 +19,12 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          sudo apt install python -y
-          pip install --upgrade pip
+          sudo apt install python3 -y
+          pip3 install --upgrade pip
           python --version
-          echo 'print("Hello World !")' > main.py
-          python main.py
           ls -a
+
+      - name: Run a multi-line script
+        run: |
+          python3 main.py
           
