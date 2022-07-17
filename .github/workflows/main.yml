@@ -24,7 +24,7 @@ jobs:
           python --version
           ls -a
 
-      - name: Run a script
+      - name: Run a first script
         run: |
           python3 *.py
           
